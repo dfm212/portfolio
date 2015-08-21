@@ -31,10 +31,9 @@ h2{
 /* ========== / ========== / ========== /  BAR NAV  / ========== / ========== */
 .tele{
   color: #cccccc;
-  margin: 200px 0!important;
   font-size: 46px;
   font-weight: bolder;
-  transform: rotate(-90deg);
+  margin: 200px 0!important;
 }
 .container-fluid {
   padding: 0 60px 0 0!important;
@@ -55,6 +54,13 @@ h2{
   height: 58px;
   width: 58px;
 }
+#logoX{
+  color: #0099CC;
+  margin-top: 95%;
+}
+#logoX:hover{
+  color: #777777;
+}
 #bar{
   background: #333333;
   height: 100%;
@@ -69,8 +75,7 @@ h2{
   border: 1px solid;
   border-color: #333333;
   color: rgba(255, 255, 255, 0.45);
-  /*display: inline-block;*/
-  height: 85%;
+  height: 750px;
   margin: 0;
   padding: 0;
   width: 320px;
@@ -87,17 +92,11 @@ h2{
   width: 320pX;
 }
 #colA1{
-  /*production*/
-  /*background-image: url("http://localhost/portfolio/img/imgDemoTop.jpg");*/
-  /*develop*/
   background-image: url("http://dfm212.github.io/portfolio/img/imgDemoTop.jpg");
-  background-size: 360px;
+  background-size: 320px 650px;;
 }
 #colB1{
-  /*production*/
-  /*background-image: url("http://localhost/portfolio/img/imgDemoButton.jpg");*/
-  /*develop*/
-  background-image: url("http://dfm212.github.io/portfolio/img/imgDemoButton.jpg");
+  background-image: url("http://dfm212.github.io/portfolio/img/imgDemoButton.jpg")no-repeat;
   background-size: 360px;
 }
 #colA1:hover + #colB1{
