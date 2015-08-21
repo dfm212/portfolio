@@ -3,7 +3,7 @@ body{
   background-color: #2f2f2f;
   margin: 0!important;
   padding: 0!important;
-  width: 1680px;
+  width: 2000px;
 }
 a{
   color: #333333;
@@ -13,6 +13,8 @@ a:hover{
   text-decoration: none;
 }
 li{
+  margin: 0!important;
+  padding: 0!important;
   list-style: none;
 }
 ul{
@@ -33,10 +35,12 @@ h2{
   color: #cccccc;
   font-size: 46px;
   font-weight: bolder;
-  margin: 200px 0!important;
+  margin: 0px 25px!important;
+  padding: 30px 0!important;
 }
 .container-fluid {
   padding: 0 60px 0 0!important;
+  margin: 0!important;
 }
 .arr{
   margin: 15px 5px 0 15px;
@@ -59,7 +63,8 @@ h2{
   margin-top: 95%;
 }
 #logoX:hover{
-  color: #777777;
+  color: #888888;
+  cursor: pointer;
 }
 #bar{
   background: #333333;
@@ -72,10 +77,8 @@ h2{
 /* ========== / ========== / ========== / SECTION / ========== / ========== */
 .projectCont{
   background: #666666;
-  border: 1px solid;
-  border-color: #333333;
   color: rgba(255, 255, 255, 0.45);
-  height: 750px;
+  height: 650px;
   margin: 0;
   padding: 0;
   width: 320px;
@@ -84,8 +87,6 @@ h2{
   display: inline-block;
 }
 .storyCont{
-  border-color: rgb(227, 224, 224);
-  border: 1px solid;
   color: rgba(255, 255, 255, 0.45);
   display: inline-block;
   height: 15%;
@@ -94,12 +95,14 @@ h2{
 #colA1{
   background-image: url("http://dfm212.github.io/portfolio/img/imgDemoTop.jpg");
   background-size: 320px 650px;;
+  margin: 0;
+  padding: 0;
 }
 #colB1{
-  background-image: url("http://dfm212.github.io/portfolio/img/imgDemoButton.jpg")no-repeat;
-  background-size: 360px;
+  background-image: url("http://dfm212.github.io/portfolio/img/imgDemoButton.jpg");
+  background-size: 320px 150px;
 }
 #colA1:hover + #colB1{
-  background: none;
+  background: #0099CC;
   color: #d2d2d2;
 }
