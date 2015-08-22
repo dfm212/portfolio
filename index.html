@@ -23,17 +23,16 @@
   <nav>
 
     <div id="bar" ng-hide="showme">
-      <a href="#"><div id="logo" class="text-center"><h2 id="logoD">D</h2></div></a>
+      <div id="logo"><h2 class="text-center">D</h2></div>
       <a href="#"><img class="icons-A text-center" src="img\barLines.png" alt="Bar lines" ng-click="showme=!showme"></a>
     </div>
 
-    <div id="bar" class="" ng-show="showme">
-      <a href="http://dfm212.github.io/portfolio/"><div id="logo" class="text-center"><h2 id="logoD">D</h2></div></a>
+    <div id="bar" class="text-center" ng-show="showme">
+      <h2 id="logoX"class="text-center" ng-click="showme=!showme">X</h2>
       <a href="#"><img class="icon-B text-center" src="img\crr.png" alt="icon1"></a>
       <a href="https://www.linkedin.com/in/danielfm212/en"><img class="icon-B text-center" src="img\linkedinLogo.png" alt="icon2"></a>
       <a href="https://github.com/dfm212"><img class="icon-B text-center" src="img\github.png" alt="icon2"></a>
       <a href="https://twitter.com/Dfm212"><img class="icon-B text-center" src="img\twitterLogo.png" alt="icon2"></a>
-      <h2 id="logoX" class="text-center" ng-click="showme=!showme">X</h2>
 
     </div>
 
@@ -41,48 +40,66 @@
 
   <section>
 
-    <div class="container-fluid ">
-      <ul id="ProjectCont1">
+    <div id="ProjectCont1" class="container-fluid">
+      <ul>
         <ul class="imgAndStory">
-          <li id="colA1" class="projectCont"><h2 class="tele">Blog</h2></li>
+          <li id="colA1" class="projectCont" ng-click="showTap=!showTap"><h2 class="tele">Blog</h2></li>
           <li id="colB1" class="storyCont text-center">
             <p>The idea of this blog is to reflect my journey and growing as Front-end Developer.</p>
           </li>
         </ul>
         <ul class="imgAndStory">
-          <li id="colA2" class="projectCont"><h2 class="tele">Binnacle</h2></li>
+          <li id="colA2" class="projectCont" ng-click="showTap=!showTap"><h2 class="tele">Binnacle</h2></li>
           <li id="colB2" class="storyCont text-center">
             <p>Public binnacle of my experiences as developed. <br>
                The idea is to have a tracking of my progress.</p>
           </li>
         </ul>
         <ul class="imgAndStory">
-          <li id="colA3" class="projectCont"><h2 class="tele">App "ToDo"</h2></li>
+          <li id="colA3" class="projectCont" ng-click="showTap=!showTap"><h2 class="tele">App "ToDo"</h2></li>
           <li id="colB3" class="storyCont text-center">
             <p>Personal challenge: Develop a ToDo App with Angularjs, for this I take as reference Trello.</p>
           </li>
         </ul>
         <ul class="imgAndStory">
-          <li id="colA4" class="projectCont"><h2 class="tele">Web #01</h2></li>
+          <li id="colA4" class="projectCont" ng-click="showTap=!showTap"><h2 class="tele">Web #01</h2></li>
           <li id="colB4" class="storyCont text-center">
             <p>One of my first websites.<br>
               The idea was to mimic the home site of Apple.</p>
           </li>
         </ul>
         <ul class="imgAndStory">
-          <li id="colA4" class="projectCont"><h2 class="tele">Web #02</h2></li>
+          <li id="colA4" class="projectCont" ng-click="showTap=!showTap"><h2 class="tele">Web #02</h2></li>
           <li id="colB4" class="storyCont text-center">
             <p>One colleague challenged me to <br>
               mimic this template.</p>
           </li>
         </ul>
         <ul class="imgAndStory">
-          <li id="colA4" class="projectCont"><h2 class="tele">1 Web *Day</h2></li>
+          <li id="colA4" class="projectCont" ng-click="showTap=!showTap"><h2 class="tele">1 Web *Day</h2></li>
           <li id="colB4" class="storyCont text-center">
             <p>This is my version of "One Page Per Day" of Jennifer Dewalt.</p>
           </li>
         </ul>
       </ul>
+
+      <div id="showcase" ng-show="showTap">
+
+        <div id="barArticle" class="container-fluid">
+          <h2 id="closeTap" ng-click="showTap=!showTap">X</h2>
+
+          <div class="container-fluid">
+            <div id="dataBarArt-A" class="col-md-5 dataBarArt">m</div>
+            <div id="dataBarArt-B" class="col-md-7 dataBarArt">
+              <div id="projectInf">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, reprehenderit. Pariatur, architecto, optio. Dolores commodi, saepe fuga sed officiis excepturi. Deleniti beatae fugiat, eius doloremque. Eos aperiam cupiditate, rerum placeat, dicta veniam veritatis ad dolorum odit, voluptas sequi eaque autem rem deleniti. Provident perspiciatis id dignissimos ratione et corporis, laboriosam recusandae a quidem quo hic quas suscipit pariatur deserunt alias iure distinctio voluptate. Tenetur, quaerat. Nostrum libero, vel eveniet accusamus ratione similique placeat in obcaecati a laborum quaerat, earum architecto veritatis ea labore magnam. Quasi velit blanditiis doloremque unde aspernatur! Reprehenderit vitae unde iusto praesentium nobis voluptatibus placeat non in inventore, ipsum consequuntur dignissimos molestias cupiditate odit velit, dolor sequi at reiciendis rem eius nam dolorum. Neque labore error accusamus ad aliquam, vero soluta consequatur quis, illo veritatis pariatur nesciunt minus, commodi molestias. Voluptatibus nulla illum hic accusamus architecto veniam quis debitis officiis eligendi corporis iste ut ab sapiente ea nam, cumque, esse molestiae explicabo vel totam iusto nihil, in? Debitis ipsum optio nemo error quidem. Quos commodi eaque deleniti aut eos ipsam est laboriosam cumque? Modi tempora eos, eveniet dicta officia at quam ipsum! Nisi doloremque, similique sed earum atque non laboriosam quibusdam beatae quod asperiores accusantium quaerat sint, quas. Eum saepe magnam numquam blanditiis, asperiores sed aspernatur quae laboriosam deserunt sit in vitae labore eligendi. Eligendi vitae eveniet molestias voluptas unde eaque officia, rerum, ex veniam eius excepturi, sit similique! Commodi, voluptates repellendus! Ab reiciendis saepe eos earum consequuntur recusandae sequi autem libero, eum hic praesentium deserunt incidunt modi, fugit ipsa amet vel dolorum quo provident nemo. Molestiae eligendi, possimus, ipsum sunt inventore magni at fugit dolores velit. Sed adipisci repellat dolorem, magni, eius tempore nulla nemo saepe cumque quidem placeat beatae aspernatur dicta omnis, aliquid nesciunt. Beatae quas dicta possimus voluptate laborum odit quod perspiciatis, iste iure.</div>
+            </div>
+          </div>
+
+
+        </div>
+
+
+      </div>
 
     </div>
 
@@ -91,6 +108,7 @@
   </section>
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- <script src="js\jQuery-app.js"></script> -->
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
