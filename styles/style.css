@@ -3,7 +3,7 @@ body{
   background-color: #2f2f2f;
   margin: 0!important;
   padding: 0!important;
-  width: 2000px;
+  width: 2020px;
 }
 a{
   color: #333333;
@@ -33,10 +33,13 @@ h2{
 /* ========== / ========== / ========== /  BAR NAV  / ========== / ========== */
 .tele{
   color: #cccccc;
+  background-color: rgba(0, 153, 204, 0.7);
   font-size: 46px;
   font-weight: bolder;
-  margin: 0px 25px!important;
-  padding: 30px 0!important;
+  margin: 0px!important;
+  padding: 30px 25px!important;
+  width: 320px;
+  z-index: 5;
 }
 .container-fluid {
   padding: 0 60px 0 0!important;
@@ -47,13 +50,11 @@ h2{
   width: 30px;
   height: 30px;
 }
-.arr:hover{
-  margin: 15px 5px 0 13px;
-  height: 35px;
-  width: 35px;
-}
 #logo{
-  background: #0099CC;
+  background: #333333;
+  color: #0099CC;
+  border: 3px solid transparent;
+  border-bottom-color: #0099CC;
   padding: 10px 0;
   height: 58px;
   width: 58px;
@@ -67,7 +68,7 @@ h2{
   cursor: pointer;
 }
 #bar{
-  background: #333333;
+  background-image: linear-gradient(rgba(36, 35, 35, 0.85), rgba(68, 68, 68, 0.85));
   height: 100%;
   margin: 0 0 0 96.2%;
   position: fixed;
@@ -87,22 +88,68 @@ h2{
   display: inline-block;
 }
 .storyCont{
-  color: rgba(255, 255, 255, 0.45);
+  color: rgba(255, 255, 255, 0.0);
   display: inline-block;
   height: 15%;
   width: 320pX;
 }
+.storyCont p{
+  padding: 15px 0 51px 0;
+  margin: 0;
+}
 #colA1{
-  background-image: url("http://dfm212.github.io/portfolio/img/imgDemoTop.jpg");
+  background-image: url("http://localhost/Portfolio/img/imgDemo1.jpg");
   background-size: 320px 650px;;
   margin: 0;
   padding: 0;
 }
 #colB1{
+  background-image: url("http://localhost/Portfolio/img/imgDemoButton1.jpg");
+  background-size: 320px 150px;
+}
+#colA2{
+  background-image: url("http://localhost/Portfolio/img/imgDemo2.jpg");
+  background-size: 320px 650px;;
+  margin: 0;
+  padding: 0;
+}
+#colB2{
+  background-image: url("http://localhost/Portfolio/img/imgDemoButton2.jpg");
+  background-size: 320px 150px;
+}
+#colA3{
+  background-image: url("http://localhost/Portfolio/img/imgDemo3.jpg");
+  background-size: 320px 650px;;
+  margin: 0;
+  padding: 0;
+}
+#colB3{
+  background-image: url("http://localhost/Portfolio/img/imgDemoButton3.jpg");
+  background-size: 320px 150px;
+}
+#colA4{
+  background-image: url("http://dfm212.github.io/portfolio/img/imgDemoTop.jpg");
+  background-size: 320px 650px;;
+  margin: 0;
+  padding: 0;
+}
+#colB4{
   background-image: url("http://dfm212.github.io/portfolio/img/imgDemoButton.jpg");
   background-size: 320px 150px;
 }
-#colA1:hover + #colB1{
-  background: #0099CC;
+#colA1:hover + .storyCont p{
+  background: rgba(0, 0, 0, 0.7);
+  color: #d2d2d2;
+}
+#colA2:hover + .storyCont p{
+  background: rgba(0, 0, 0, 0.7);
+  color: #d2d2d2;
+}
+#colA3:hover + .storyCont p{
+  background: rgba(0, 0, 0, 0.7);
+  color: #d2d2d2;
+}
+#colA4:hover + .storyCont p{
+  background: rgba(0, 0, 0, 0.7);
   color: #d2d2d2;
 }
