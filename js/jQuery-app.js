@@ -1,11 +1,10 @@
 $(function() {
 
-   $(document).on('mousewheel', function() {
-
-      this.scrollLeft -= (delta * 30);
-
-      event.preventDefault();
-
-   });
+  $("#content-5").mCustomScrollbar({
+    axis:"x",
+    theme:"dark-thin",
+    autoExpandScrollbar:true,
+    advanced:{autoExpandHorizontalScroll:true}
+  });
 
 });
