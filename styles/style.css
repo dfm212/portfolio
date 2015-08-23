@@ -55,7 +55,7 @@ ul{
 }
 .icon-B{
   border: 1px solid transparent;
-  border-bottom-color: #9f9f9f;
+  border-bottom-color: #393939;
   margin: 0 6px 0 0;
   padding: 10px;
   width: 50px;
@@ -80,11 +80,11 @@ ul{
 #showcase{
   /*background-color: rgba(36, 35, 35, 0.85);*/
   background-color: rgba(148, 26, 26, 0.85);
-
-  height: 500px;
-  margin: -715px 10%;
+  filter: blur(10px);
+  height: 550px;
+  margin: -715px 0;
   position: fixed;
-  width: 80%;
+  width: 100%;
 }
 #projectInf{
   background: pink;
@@ -93,6 +93,7 @@ ul{
 }
 #barArticle{
   background-color: yellow;
+  margin: 50px;
   height: 40px;
 }
 #closeTap{
@@ -152,7 +153,7 @@ ul{
   cursor: pointer;
 }
 #colB1{
-  background-image: url("http://dfm212.github.io/portfolio//img/1/Botton3.jpg");
+  background-image: url("http://dfm212.github.io/portfolio/img/1/botton.jpg");
   background-size: 320px 150px;
 }
 #colA2{
@@ -163,7 +164,7 @@ ul{
   cursor: pointer;
 }
 #colB2{
-  background-image: url("http://dfm212.github.io/portfolio//img/2/Botton3.jpg");
+  background-image: url("http://dfm212.github.io/portfolio/img/2/botton.jpg");
   background-size: 320px 150px;
 }
 #colA3{
@@ -174,7 +175,7 @@ ul{
   cursor: pointer;
 }
 #colB3{
-  background-image: url("http://dfm212.github.io/portfolio//img/3/Botton3.jpg");
+  background-image: url("http://dfm212.github.io/portfolio/img/3/botton.jpg");
   background-size: 320px 150px;
 }
 #colA4{
@@ -185,18 +186,18 @@ ul{
   cursor: pointer;
 }
 #colB4{
-  background-image: url("http://dfm212.github.io/portfolio//img/4/Botton3.jpg");
+  background-image: url("http://dfm212.github.io/portfolio/img/4/botton.jpg");
   background-size: 320px 150px;
 }
 #colA5{
-  background-image: url("http://dfm212.github.io/portfolio/img/5/top.jpg");
+  background-image: url("http://dfm212.github.io/portfolio/img/5/imgDemoTop.jpg");
   background-size: 320px 650px;;
   margin: 0;
   padding: 0;
   cursor: pointer;
 }
 #colB5{
-  background-image: url("http://dfm212.github.io/portfolio//img/5/Botton3.jpg");
+  background-image: url("http://dfm212.github.io/portfolio/img/5/imgDemoButton.jpg");
   background-size: 320px 150px;
 }
 #colA6{
@@ -207,7 +208,7 @@ ul{
   cursor: pointer;
 }
 #colB6{
-  background-image: url("http://dfm212.github.io/portfolio//img/6/Botton3.jpg");
+  background-image: url("http://dfm212.github.io/portfolio/img/6/botton.jpg");
   background-size: 320px 150px;
 }
 #colA1:hover + .storyCont p{
@@ -223,6 +224,14 @@ ul{
   color: #d2d2d2;
 }
 #colA4:hover + .storyCont p{
+  background: rgba(70, 70, 70, 0.7);
+  color: #d2d2d2;
+}
+#colA5:hover + .storyCont p{
+  background: rgba(70, 70, 70, 0.7);
+  color: #d2d2d2;
+}
+#colA6:hover + .storyCont p{
   background: rgba(70, 70, 70, 0.7);
   color: #d2d2d2;
 }
