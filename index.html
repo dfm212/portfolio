@@ -13,6 +13,7 @@
   <link href="styles\style.css" rel="stylesheet">
   <link href="//cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.min.css" rel="stylesheet">
   <link href="//cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/mCSB_buttons.png" rel="stylesheet">
+  <link href="styles\media-styles.css" rel="stylesheet">
 
   <!-- Angularjs -->
   <script src="js\angular.min.js"></script>
@@ -40,30 +41,36 @@
   <section ng-controller="workController as workCtrl">
 
     <div id="ProjectCont" class="container-fluid" >
-      <div id="demo" class="showcase">
 
-    		<boards></boards>
+      <section><!-- Angularjs TEMPLATE injection -->
+        <div id="demo" class="showcase">
+            <div id="content-6" class="content horizontal-images">
 
-      </div>
+              <boards></boards><!-- ===> Angularjs TEMPLATE injection -->
 
+            </div>
+        </div>
+      </section><!-- (/) Angularjs TEMPLATE injection -->
 
-      <!--  -->
-      <section ng-controller="demotroller as demoCtrl">
+      <section>
 
-        <div id="showcase" ng-repeat="demo in demoCtrl.demos" ng-show="demoShow">
+        <div ng-controller="demotroller as demoCtrl">
+          <div id="showcase" ng-repeat="demo in demoCtrl.demos">
 
-          <div id="barArticle" class="container-fluid" >
-            <h2 id="closeTap" ng-click="demoShow=!demoShow">X</h2>
+            <div id="barArticle" class="container-fluid" >
+              <div class="container-fluid pull-left">
 
-            <div class="container-fluid pull-left">
-              <div id="dataBarArt-A" class="col-md-4 dataBarArt">
-                <h3>{{demo.title}}</h3>
-                <p>Description: {{demo.description}}</p>
-                <p>Programs:</p>
-                <p>{{demo.programs}}</p>
-              </div>
-              <div id="dataBarArt-B" class="col-md-8 dataBarArt">
-                <div id="projectInf" class="text-center"><img ng-src="img\0\{{demo.demo}}" alt=""></div>
+                <div id="dataBarArt-A" class="col-md-4 dataBarArt">
+                  <h3>{{demo.title}}</h3>
+                  <p>Description: {{demo.description}}</p>
+                  <p>Programs:</p>
+                  <p>{{demo.programs}}</p>
+                </div>
+
+                <div id="dataBarArt-B" class="col-md-8 dataBarArt">
+                  <div id="projectInf" class="text-center"><img ng-src="img\0\{{demo.demo}}" alt=""></div>
+                </div>
+
               </div>
             </div>
           </div>
@@ -72,10 +79,14 @@
       </section>
 
       </div>
-
-    </div>
-
   </section>
+
+  <footer>
+
+
+  </footer>
+
+
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="//cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.concat.min.js"></script>

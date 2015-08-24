@@ -20,7 +20,6 @@ body{
   height: auto;
   margin: 0!important;
   padding: 0!important;
-  height: 750px!important;
   /*width: 1980px;*/
   width: 1420px;
 }
@@ -100,9 +99,7 @@ ul{
 #showcase{
   background-image: linear-gradient( rgba(68, 68, 68, 0.80), rgba(24, 24, 24, 0.8));
   color: #d2d2d2;
-  height: 520px;
-  margin: -685px 10%;
-  position: fixed;
+  margin: 50px 10%;
   width: 80%;
   z-index: 900;
 }
@@ -115,40 +112,15 @@ ul{
   padding: 5px 35px!important;
   cursor: pointer;
 }
-#barArticle{
-  margin: -500px 0;
-}
-
-
-
-.modal{
-  background-color: rgba(70, 70, 70, 0.7);
-}
-.modal-lg{
-  background: yellow!important;
-  background-color: yellow!important;
-}
-.modal-content{
-  width: 850px!important;
-  color: red!important;
-  border: none!important;
-  background: white!important;
-  background-color: white!important;
-}
-
-
-
-
 
 #dataBarArt-A{
-  margin-top: 7px;
   background-color: rgba(4, 134, 177, 0.8);
   padding: 25px 20px 0 40px;
-  height: 445px;
+  height: 514px;
 }
 #dataBarArt-B{
   /*background-color: rgba(233, 58, 58, 0.8);*/
-  margin-top: 7px;
+  margin: 35px 0 35px 0;
   padding: 0px 0 0 65px;
 }
 .imgAndStory{
@@ -218,77 +190,3 @@ ul{
 }
 /* ==========> */
 /* ========== / ========== / ========== / horizontal Scroll / ========== / ========== */
-
-
-
-/* Extra small devices (phones, less than 768px) */
-/* No media query since this is the default in Bootstrap */
-
-/* Small devices (tablets, 768px and up) */
-@media (min-width: 320px) {
-  body{
-    height: 568px;
-    overflow-y: hidden;
-    width: auto;
-  }
-  #bar{
-    margin: 0 0 0 270px;
-  }
-  .showcase .horizontal-images.content{
-  	height: 568px;
-  }
-}
-@media (min-width: 321px) and (max-width: 400px) {
-  #bar{
-    margin: 0 0 0 85%;
-  }
-  .showcase .horizontal-images.content{
-    height: 667px;
-  }
-}
-@media (min-width: 401px) and (max-width: 478px) {
-  #bar{
-    margin: 0 0 0 88%;
-  }
-  .showcase .horizontal-images.content{
-    height: 736px;
-  }
-}
-@media (min-width: 478px) and (max-width: 605px) {
-  #bar{
-    margin: 0 0 0 90%;
-  }
-  .showcase .horizontal-images.content{
-    height: 736px;
-  }
-}
-@media (min-width: 606px) and (max-width: 755px) {
-  #bar{
-    margin: 0 0 0 92%;
-  }
-}
-@media (min-width: 606px) {
-  .showcase .horizontal-images.content{
-    height: 736px;
-  }
-}
-@media (min-width: 756px) and (max-width: 1006px) {
-  #bar{
-    margin: 0 0 0 94%;
-  }
-}
-@media (min-width: 1007px) and (max-width: 1209px){
-  #bar{
-    margin: 0 0 0 95%;
-  }
-}
-@media (min-width: 1007px){
-  .showcase .horizontal-images.content{
-    height: 768px;
-  }
-}
-@media (min-width: 1210px){
-  #bar{
-    margin: 0 0 0 96%;
-  }
-}
