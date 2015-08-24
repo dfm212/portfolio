@@ -1,4 +1,5 @@
-var app = angular.module('portfolio-directives', []);
+(function(){
+  var app = angular.module('portfolio-directives', []);
 
     app.directive("boards", function() {
       return {
@@ -6,6 +7,5 @@ var app = angular.module('portfolio-directives', []);
         templateUrl: "http://dfm212.github.io/portfolio/HTML-templates/template-horizontal.html"
       };
     });
-
 
 })();
