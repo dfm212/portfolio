@@ -17,7 +17,7 @@
   <!-- Angularjs -->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
   <script src="js\app.js" type="text/javascript"></script>
-
+  <script src="js\angular-directives.js" type="text/javascript"></script>
 
 
   <title>Portfolio</title>
@@ -42,30 +42,8 @@
     <div id="ProjectCont" class="container-fluid" >
       <div id="demo" class="showcase">
 
-    		<section>
-    			<div id="content-6" class="content horizontal-images">
+    		<boards></boards>
 
-            <ul  class="imgAndStory" ng-repeat="Files in workCtrl.boards">
-            <!-- template -->
-              <li class="projectCont" >
-                <img ng-src="img\0\{{Files.full}}"  id="colA1" class="img-responsive" alt="imaga example">
-              </li>
-              <li><a href="{{Files.link}}"><h2 id="tele">{{Files.title}}</h2></a></li>
-              <li id="colC1"  ng-click="test()"></li>
-              <li id="colB1" class="text-center">
-                <a href="{{Files.link}}"><p>{{Files.description}}</p></a>
-              </li>
-              <li>
-
-
-
-              </li>
-            <!-- /template -->
-            </ul>
-
-          <!-- /content -->
-        </div>
-        </section>
       </div>
 
 

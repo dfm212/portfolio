@@ -1,18 +1,17 @@
-var app = angular.module("portgolio", []);
+var app = angular.module("portgolio", ['portfolio-directives']);
 
 app.controller('workController', function($scope){
   this.boards = boardWorks;
 
-  $scope.test = function(text) {
-    alert(123);
-  };
+  // $scope.test = function(text) {
+  //   alert(123);
+  // };
 
 });
 
 app.controller('demotroller', function($scope){
   this.demos = boardWorks;
 
-  var demoShow = false;
 
 
 
@@ -64,7 +63,7 @@ var boardWorks =
   {
     id: "#3",
     title : "My first app",
-    description : "Personal challenge: Develop a ToDo App with Angularjs (mimic of Trello).",
+    description : "Personal challenge: Develop a ToDo App with Angularjs \"mimic of Trello\".",
     full: "full3.jpg",
     images: {
       top: "",
