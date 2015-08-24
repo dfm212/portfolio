@@ -2,6 +2,7 @@
 <html lang="en" ng-app="portgolio">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -46,13 +47,18 @@
 
             <ul  class="imgAndStory" ng-repeat="Files in workCtrl.boards">
             <!-- template -->
-              <li class="projectCont" ng-click="showTap=!showTap" >
-                <img ng-src="img\0\{{Files.full}}" ng-click="test"id="colA1" class="img-responsive" alt="imaga example">
+              <li class="projectCont" >
+                <img ng-src="img\0\{{Files.full}}"  id="colA1" class="img-responsive" alt="imaga example">
               </li>
-              <li><h2 id="tele">{{Files.title}}</h2></li>
-              <li id="colC1"></li>
+              <li><a href="{{Files.link}}"><h2 id="tele">{{Files.title}}</h2></a></li>
+              <li id="colC1"  ng-click="test()"></li>
               <li id="colB1" class="text-center">
-                <p>{{Files.description}}</p>
+                <a href="{{Files.link}}"><p>{{Files.description}}</p></a>
+              </li>
+              <li>
+
+
+
               </li>
             <!-- /template -->
             </ul>
@@ -64,22 +70,22 @@
 
 
       <!--  -->
-      <section>
+      <section ng-controller="demotroller as demoCtrl">
 
-        <div id="showcase" ng-show="showme">
+        <div id="showcase" ng-repeat="demo in demoCtrl.demos" ng-show="demoShow">
 
           <div id="barArticle" class="container-fluid" >
-            <h2 id="closeTap" ng-click="showme=!showme">X</h2>
+            <h2 id="closeTap" ng-click="demoShow=!demoShow">X</h2>
 
             <div class="container-fluid pull-left">
               <div id="dataBarArt-A" class="col-md-4 dataBarArt">
-                <h3>{{Files.title}}</h3>
-                <p>Description: {{Files.description}}</p>
+                <h3>{{demo.title}}</h3>
+                <p>Description: {{demo.description}}</p>
                 <p>Programs:</p>
-                <p>{{Files.programs}}</p>
+                <p>{{demo.programs}}</p>
               </div>
               <div id="dataBarArt-B" class="col-md-8 dataBarArt">
-                <div id="projectInf" class="text-center"><img ng-src="img\0\{{Files.demo}}" alt=""></div>
+                <div id="projectInf" class="text-center"><img ng-src="img\0\{{demo.demo}}" alt=""></div>
               </div>
             </div>
           </div>

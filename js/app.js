@@ -4,14 +4,25 @@ app.controller('workController', function($scope){
   this.boards = boardWorks;
 
   $scope.test = function(text) {
-    alert(text);
+    alert(123);
   };
-
 
 });
 
+app.controller('demotroller', function($scope){
+  this.demos = boardWorks;
+
+  var demoShow = false;
 
 
+
+
+
+
+
+
+
+});
 
 
 
@@ -33,7 +44,8 @@ var boardWorks =
     },
     title2: "Programs",
     programs: "HTML5, CSS3, JS, jQuery, Boostrap, Angular",
-    demo: "demo1.jpg"
+    demo: "demo1.jpg",
+    link: ""
   },
   {
     id: "#2",
@@ -46,7 +58,8 @@ var boardWorks =
     },
     title2: "Programs",
     programs: "HTML5, CSS3, JS, jQuery, Boostrap, Angular",
-    demo: "demo2.jpg"
+    demo: "demo2.jpg",
+    link: ""
   },
   {
     id: "#3",
@@ -59,7 +72,8 @@ var boardWorks =
     },
     title2: "Programs",
     programs: "HTML5, CSS3, JS, jQuery, Boostrap, Angular",
-    demo: "demo3.jpg"
+    demo: "demo3.jpg",
+    link: "http://dfm212.github.io/ToDoList/"
   },
   {
     id: "#4",
@@ -72,7 +86,8 @@ var boardWorks =
     },
     title2: "Programs",
     programs: "HTML5, CSS3, JS, jQuery, Boostrap, Angular",
-    demo: "demo4.jpg"
+    demo: "demo4.jpg",
+    link: "http://dfm212.github.io/first-web/"
   },
   {
     id: "#5",
@@ -85,7 +100,8 @@ var boardWorks =
     },
     title2: "Programs",
     programs: "HTML5, CSS3, JS, jQuery, Boostrap, Angular",
-    demo: "demo5.jpg"
+    demo: "demo5.jpg",
+    link: "http://dfm212.github.io/CamiloSite/"
   },
   {
     id: "#6",
@@ -98,6 +114,7 @@ var boardWorks =
     },
     title2: "Programs",
     programs: "HTML5, CSS3, JS, jQuery, Boostrap, Angular",
-    demo: "demo6.jpg"
+    demo: "demo6.jpg",
+    link: "http://dfm212.github.io/oneWebsitePerDay/004-CSS3_Preloader/index.html"
   },
  ];
