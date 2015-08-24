@@ -1,3 +1,5 @@
+(function(){
+
 var app = angular.module("portgolio", ['portfolio-directives']);
 
 app.controller('workController', function($scope){
@@ -117,3 +119,8 @@ var boardWorks =
     link: "http://dfm212.github.io/oneWebsitePerDay/004-CSS3_Preloader/index.html"
   },
  ];
+
+
+
+
+})();
