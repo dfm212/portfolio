@@ -12,14 +12,19 @@ a:hover{
 body{
   background-image: linear-gradient(rgb(50, 50, 50), rgb(34, 34, 34));
   font-size: 2px!important;
-  height: 100%;
+  height: auto;
   margin: 0!important;
   padding: 0!important;
+  height: 750px!important;
   /*width: 1980px;*/
-  width: 2000px;
+  width: 1420px;
 }
 body p{
   font-size: 14px;
+}
+button{
+  border: none!important;
+  padding: 0!important;
 }
 h2{
   font-size: 32px;
@@ -44,10 +49,15 @@ ul{
   margin: 0!important;
   padding: 0!important;
 }
+.container{
+  padding: 0!important;
+  margin: 0!important;
+}
 .container-fluid {
   padding: 0 !important;
   margin: 0!important;
 }
+/* ========== / ========== / ========== /  BAR NAV  / ========== / ========== */
 /* ========== / ========== / ========== /  BAR NAV  / ========== / ========== */
 .icons-A{
   margin: 0 6px 0 0;
@@ -78,34 +88,58 @@ ul{
   width: 60px;
   z-index: 1000;
 }
+
 /* ========== / ========== / ========== / SECTION / ========== / ========== */
+/* ========== / ========== / ========== / SECTION / ========== / ========== */
+
 #showcase{
   background-image: linear-gradient( rgba(68, 68, 68, 0.80), rgba(24, 24, 24, 0.8));
   color: #d2d2d2;
   height: 520px;
-  margin: -715px 10%;
+  margin: 55px 10%;
   position: fixed;
   width: 80%;
+  z-index: 900;
 }
 #projectInf{
   height: 444px;
   width: 610px;;
   overflow-y:scroll;
 }
-#barArticle{
+/*#barArticle{
   margin: 50px;
   height: 35px;
-}
+}*/
 #closeTap{
   padding: 5px 35px!important;
   cursor: pointer;
 }
-.dataBarArt{
-  height: 490px;
+
+
+
+
+.modal{
+  background-color: rgba(70, 70, 70, 0.7);
 }
+.modal-lg{
+  background: yellow!important;
+  background-color: yellow!important;
+}
+.modal-content{
+  width: 850px!important;
+  color: red!important;
+  border: none!important;
+  background: white!important;
+  background-color: white!important;
+}
+
+
+
+
+
 #dataBarArt-A{
   margin-top: 7px;
-  /*background-color: rgba(4, 134, 177, 0.8);*/
+  background-color: rgba(4, 134, 177, 0.8);
   padding: 25px 20px 0 40px;
   height: 445px;
 }
@@ -117,124 +151,64 @@ ul{
 .imgAndStory{
   display: inline-block;
 }
-.projectCont{
-  height: 650px;
-  margin: 0;
-  padding: 0;
-  width: 320px;
-}
-.storyCont{
-  color: rgba(255, 255, 255, 0.0);
-  display: inline-block;
-  height: 100%;
-  width: 320pX;
-}
-.storyCont p{
-  height: 120px;
-  padding: 15px 0;
-  margin: 0;
-}
-.storyCont p:hover{
-  background: rgba(70, 70, 70, 0.7);
-  color: #d2d2d2;
-  font-size: 14px!important;
-}
-.tele{
+
+/* ========== / ========== / ========== / img effect / ========== / ========== */
+/* ==========> */
+#tele{
   color: #cccccc;
   background-color: rgba(0, 153, 204, 0.7);
   font-weight: bolder;
   margin: 0px!important;
-  padding: 12px 25px 8px 25px!important;
+  padding: 12px 25px 9px 25px!important;
+  position: relative;
   width: 320px;
-  z-index: 5;
 }
 #colA1{
-  background-image: url("http://dfm212.github.io/portfolio/img/1/top.jpg");
-  background-size: 320px 650px;
-  margin: 0;
-  padding: 0;
-  cursor: pointer;
+  position: absolute;
 }
 #colB1{
-  background-image: url("http://dfm212.github.io/portfolio/img/1/botton.jpg");
-  background-size: 320px 150px;
+  background-color: rgba(70, 70, 70, 0.45);
+  position: relative;
 }
-#colA2{
-  background-image: url("http://dfm212.github.io/portfolio/img/2/top.jpg");
-  background-size: 320px 650px;;
+#colB1 p{
+  color: rgba(70, 70, 70, 0.0);
   margin: 0;
-  padding: 0;
-  cursor: pointer;
+  font-size: 16px;
+  padding: 25px 15px;
+  position: relative;
+  height: 150px;
+  width: 320px;
 }
-#colB2{
-  background-image: url("http://dfm212.github.io/portfolio/img/2/botton.jpg");
-  background-size: 320px 150px;
+#colC1{
+  background-color: rgba(70, 70, 70, 0.45);
+  height: 550px;
+  position: relative;
+  width: 321px
 }
-#colA3{
-  background-image: url("http://dfm212.github.io/portfolio/img/3/top.jpg");
-  background-size: 320px 650px;;
-  margin: 0;
-  padding: 0;
-  cursor: pointer;
+#colC1:hover{
+  background-color: rgba(70, 70, 70, 0.0);
 }
-#colB3{
-  background-image: url("http://dfm212.github.io/portfolio/img/3/botton.jpg");
-  background-size: 320px 150px;
-}
-#colA4{
-  background-image: url("http://dfm212.github.io/portfolio/img/4/top.jpg");
-  background-size: 320px 650px;;
-  margin: 0;
-  padding: 0;
-  cursor: pointer;
-}
-#colB4{
-  background-image: url("http://dfm212.github.io/portfolio/img/4/botton.jpg");
-  background-size: 320px 150px;
-}
-#colA5{
-  background-image: url("http://dfm212.github.io/portfolio/img/5/imgDemoTop.jpg");
-  background-size: 320px 650px;;
-  margin: 0;
-  padding: 0;
-  cursor: pointer;
-}
-#colB5{
-  background-image: url("http://dfm212.github.io/portfolio/img/5/imgDemoButton.jpg");
-  background-size: 320px 150px;
-}
-#colA6{
-  background-image: url("http://dfm212.github.io/portfolio/img/6/top.jpg");
-  background-size: 320px 650px;;
-  margin: 0;
-  padding: 0;
-  cursor: pointer;
-}
-#colB6{
-  background-image: url("http://dfm212.github.io/portfolio/img/6/botton.jpg");
-  background-size: 320px 150px;
-}
-#colA1:hover + .storyCont p{
-  background: rgba(70, 70, 70, 0.7);
-  color: #d2d2d2;
-}
-#colA2:hover + .storyCont p{
-  background: rgba(70, 70, 70, 0.7);
-  color: #d2d2d2;
-}
-#colA3:hover + .storyCont p{
-  background: rgba(70, 70, 70, 0.7);
-  color: #d2d2d2;
-}
-#colA4:hover + .storyCont p{
-  background: rgba(70, 70, 70, 0.7);
-  color: #d2d2d2;
-}
-#colA5:hover + .storyCont p{
-  background: rgba(70, 70, 70, 0.7);
-  color: #d2d2d2;
-}
-#colA6:hover + .storyCont p{
-  background: rgba(70, 70, 70, 0.7);
+#colC1:hover + #colB1 p{
+  background-color: rgba(0, 153, 204, 0.7);
   color: #e9e9e9;
 }
+#colB1 p:hover{
+  background-color: rgba(233, 58, 58, 0.8);
+  color: #e9e9e9;
+}
+
+/* ==========> */
+/* ========== / ========== / ========== / img effect / ========== / ========== */
+
+
+
+/* ========== / ========== / ========== / horizontal Scroll / ========== / ========== */
+/* ==========> */
+.showcase .horizontal-images.content{
+	height: 740px;
+	width: 1500px;
+	max-width: 100%;
+	padding: 0;
+}
+/* ==========> */
+/* ========== / ========== / ========== / horizontal Scroll / ========== / ========== */

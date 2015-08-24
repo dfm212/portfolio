@@ -1,9 +1,8 @@
 $(function() {
 
-  $("#content-5").mCustomScrollbar({
+  $("#content-6").mCustomScrollbar({
     axis:"x",
-    theme:"dark-thin",
-    autoExpandScrollbar:true,
+    theme:"light-3",
     advanced:{autoExpandHorizontalScroll:true}
   });
 

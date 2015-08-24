@@ -10,17 +10,21 @@
 
   <!-- style -->
   <link href="styles\style.css" rel="stylesheet">
+  <link href="//cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+  <link href="//cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/mCSB_buttons.png" rel="stylesheet">
 
   <!-- Angularjs -->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
-  <script src="js\app.js" type="text/javascript">
+  <script src="js\app.js" type="text/javascript"></script>
 
 
-  </script>
 
-  </script>
+  <title>Portfolio</title>
+</head>
+<body >
 
-  <nav>
+
+  <div>
 
     <div id="bar" class="text-center">
       <h2 id="logo"class="text-center">D</h2>
@@ -30,80 +34,68 @@
 
     </div>
 
-  </nav>
+  </div>
 
-  <section>
+  <section ng-controller="workController as workCtrl">
 
-    <div id="ProjectCont1" class="container-fluid">
-      <ul>
-        <ul class="imgAndStory">
-          <li id="colA1" class="projectCont" ng-click="showTap=!showTap"><h2 class="tele">Blog</h2></li>
-          <li id="colB1" class="storyCont text-center">
-            <p>The idea of this blog is to reflect my journey and growing as Front-end Developer.</p>
-          </li>
-        </ul>
-        <ul class="imgAndStory">
-          <li id="colA2" class="projectCont" ng-click="showTap=!showTap"><h2 class="tele">Binnacle</h2></li>
-          <li id="colB2" class="storyCont text-center">
-            <p>Public binnacle of my experiences as developed. <br>
-               The idea is to have a tracking of my progress.</p>
-          </li>
-        </ul>
-        <ul class="imgAndStory">
-          <li id="colA3" class="projectCont" ng-click="showTap=!showTap"><h2 class="tele">App "ToDo"</h2></li>
-          <li id="colB3" class="storyCont text-center">
-            <p>Personal challenge: Develop a ToDo App with Angularjs, for this I take as reference Trello.</p>
-          </li>
-        </ul>
-        <ul class="imgAndStory">
-          <li id="colA4" class="projectCont" ng-click="showTap=!showTap"><h2 class="tele">Web #01</h2></li>
-          <li id="colB4" class="storyCont text-center">
-            <p>One of my first websites.<br>
-              The idea was to mimic the home site of Apple.</p>
-          </li>
-        </ul>
-        <ul class="imgAndStory">
-          <li id="colA5" class="projectCont" ng-click="showTap=!showTap"><h2 class="tele">Web #02</h2></li>
-          <li id="colB5" class="storyCont text-center">
-            <p>One colleague challenged me to <br>
-              mimic this template.</p>
-          </li>
-        </ul>
-        <ul class="imgAndStory">
-          <li id="colA6" class="projectCont" ng-click="showTap=!showTap"><h2 class="tele">Laboratory</h2></li>
-          <li id="colB6" class="storyCont text-center">
-            <p>This is my version of "One Page Per Day" of Jennifer Dewalt.</p>
-          </li>
-        </ul>
-      </ul>
-      <div id="showcase" ng-show="showTap">
+    <div id="ProjectCont" class="container-fluid" >
+      <div id="demo" class="showcase">
 
-        <div id="barArticle" class="container-fluid">
-          <h2 id="closeTap" ng-click="showTap=!showTap">X</h2>
+    		<section>
+    			<div id="content-6" class="content horizontal-images">
 
-          <div class="container-fluid">
-            <div id="dataBarArt-A" class="col-md-4 dataBarArt">
-              <h3>Title</h3>
-              <p>Description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus distinctio nisi expedita molestiae eveniet minus, aspernatur soluta sit eaque quam.</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae animi omnis natus?</p>
-              <p>Programs:</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, aspernatur.</p>
-            </div>
-            <div id="dataBarArt-B" class="col-md-8 dataBarArt">
-              <div id="projectInf" class="text-center"><img src="img\3\img-demo.jpg" alt=""></div>
+            <ul  class="imgAndStory" ng-repeat="Files in workCtrl.boards">
+            <!-- template -->
+              <li class="projectCont" ng-click="showTap=!showTap" >
+                <img ng-src="img\0\{{Files.full}}" ng-click="test"id="colA1" class="img-responsive" alt="imaga example">
+              </li>
+              <li><h2 id="tele">{{Files.title}}</h2></li>
+              <li id="colC1"></li>
+              <li id="colB1" class="text-center">
+                <p>{{Files.description}}</p>
+              </li>
+            <!-- /template -->
+            </ul>
+
+          <!-- /content -->
+        </div>
+        </section>
+      </div>
+
+
+      <!--  -->
+      <section>
+
+        <div id="showcase" ng-show="showme">
+
+          <div id="barArticle" class="container-fluid" >
+            <h2 id="closeTap" ng-click="showme=!showme">X</h2>
+
+            <div class="container-fluid pull-left">
+              <div id="dataBarArt-A" class="col-md-4 dataBarArt">
+                <h3>{{Files.title}}</h3>
+                <p>Description: {{Files.description}}</p>
+                <p>Programs:</p>
+                <p>{{Files.programs}}</p>
+              </div>
+              <div id="dataBarArt-B" class="col-md-8 dataBarArt">
+                <div id="projectInf" class="text-center"><img ng-src="img\0\{{Files.demo}}" alt=""></div>
+              </div>
             </div>
           </div>
         </div>
+
+      </section>
 
       </div>
 
     </div>
 
-
-
   </section>
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="js\jQuery-app.js"></script>
   <!-- <script src="js\jQuery-app.js"></script> -->
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
