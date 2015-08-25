@@ -26,17 +26,11 @@
 <body >
 
 
-  <div>
+  <nav>
 
-    <div id="bar" class="text-center">
-      <h2 id="logo"class="text-center">D</h2>
-      <a href="https://www.linkedin.com/in/danielfm212/en"><img class="icon-B text-center" src="img\icons\linkedinLogo.png" alt="icon2"></a>
-      <a href="https://github.com/dfm212"><img class="icon-B text-center" src="img\icons\github.png" alt="icon2"></a>
-      <a href="https://twitter.com/Dfm212"><img class="icon-B text-center" src="img\icons\twitterLogo.png" alt="icon2"></a>
+    <menu></menu>
 
-    </div>
-
-  </div>
+  </nav>
 
   <section ng-controller="workController as workCtrl">
 
@@ -58,6 +52,7 @@
           <div id="showcase" ng-repeat="demo in demoCtrl.demos">
 
             <div id="barArticle" class="container-fluid" >
+              <div id="{{demo.id}}">
               <div class="container-fluid pull-left">
 
                 <div id="dataBarArt-A" class="col-md-4 dataBarArt">
@@ -76,13 +71,16 @@
                 <div id="dataBarArt-B" class="col-md-8 dataBarArt">
                   <div id="projectInf" class="text-center content mCustomScrollbar"><img class="img-resposive" ng-src="img\0\{{demo.demo}}" alt=""></div>
                 </div>
-
+                </div>
               </div>
             </div>
           </div>
         </div>
 
       </section>
+
+
+
 
       </div>
   </section>
@@ -91,7 +89,7 @@
 
     <div id="legal" class="container-fluid">
       <div id="lineDecoration"></div>
-      <p class="col-md-6 col-sm-6">
+      <p id="foo" class="col-md-6 col-sm-6">
         <a href="#">  Resume  </a> | <a href="https://www.linkedin.com/in/danielfm212/en">  LinkedIn  </a> | <a href="https://github.com/dfm212">  Github  </a> | <a href="https://twitter.com/Dfm212">  Twitter  </a>
       </p>
         <p class="col-md-6 col-sm-6">
