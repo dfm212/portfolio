@@ -61,14 +61,20 @@
               <div class="container-fluid pull-left">
 
                 <div id="dataBarArt-A" class="col-md-4 dataBarArt">
-                  <h3>{{demo.title}}</h3>
-                  <p>Description: {{demo.description}}</p>
-                  <p>Programs:</p>
-                  <p>{{demo.programs}}</p>
+                  <div>
+                    <h3>{{demo.title}}</h3>
+                    <p>Description: {{demo.description}}</p>
+                    <p>Programs:</p>
+                    <p>{{demo.programs}}</p>
+                  </div>
+                  <div id="showcaseLinks" class="pull-bottom">
+                    <p class="showcaseLinksGO">Watch on:<a href="{{demo.link}}"><h4 class="showcaseLinksGO"> Site</h4></a></p>
+                    <p class="showcaseLinksGO">Watch on: <a href="{{demo.github}}"><h4 class="showcaseLinksGO">Github</h4></a></p>
+                  </div>
                 </div>
 
                 <div id="dataBarArt-B" class="col-md-8 dataBarArt">
-                  <div id="projectInf" class="text-center"><img ng-src="img\0\{{demo.demo}}" alt=""></div>
+                  <div id="projectInf" class="text-center content mCustomScrollbar"><img class="img-resposive" ng-src="img\0\{{demo.demo}}" alt=""></div>
                 </div>
 
               </div>
@@ -83,6 +89,16 @@
 
   <footer>
 
+    <div id="legal" class="container-fluid">
+      <div id="lineDecoration"></div>
+      <p class="col-md-6 col-sm-6">
+        <a href="#">  Resume  </a> | <a href="https://www.linkedin.com/in/danielfm212/en">  LinkedIn  </a> | <a href="https://github.com/dfm212">  Github  </a> | <a href="https://twitter.com/Dfm212">  Twitter  </a>
+      </p>
+        <p class="col-md-6 col-sm-6">
+          Copy right &copy;  DFM212 - 2015 <br>
+          Daniel.figueroa1190@gmail.com
+        </p>
+    </div>
 
   </footer>
 
