@@ -5,7 +5,7 @@
     return {
       restrict: 'E',
       // =====> G I T H U B
-      templateUrl: "http://dfm212.github.io/portfolio/HTML-templates\menu-right.html"
+      templateUrl: "http://dfm212.github.io/portfolio/HTML-templates/menu-right.html"
 
       // =====> P R O D U C T I O N
       // templateUrl: "http://localhost/portfolio/HTML-templates/menu-right.html"
