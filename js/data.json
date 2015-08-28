@@ -1,34 +1,3 @@
-
-var app = angular.module("portgolio", ['portfolio-directives',]);
-
-
-app.controller('workController', function($scope, $location, $anchorScroll){
-  this.boards = boardWorks;
-
-  // ================================================================
-  // anchor between menu and demos
-
-  $scope.scrollTo = function(id) {
-    $location.hash(id);
-    console.log($location.hash());
-    $anchorScroll();
-  };
-
-});
-
-app.controller('demotroller', function(){
-  this.demos = boardWorks;
-
-});
-
-
-
-
-
-
-
-
-var boardWorks =
 [
   {
     id: "1",
