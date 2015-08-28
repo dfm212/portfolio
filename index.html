@@ -11,11 +11,9 @@
 
   <!-- style -->
   <link href="styles\style.css" rel="stylesheet">
-  <link href="styles\mobile.css" rel="stylesheet">
-  <link href="styles\media-styles.css" rel="stylesheet">
   <link href="//cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.min.css" rel="stylesheet">
   <link href="//cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/mCSB_buttons.png" rel="stylesheet">
-
+  <link href="styles\media-styles.css" rel="stylesheet">
 
   <!-- Angularjs -->
   <script src="js\angular.min.js"></script>
@@ -34,26 +32,9 @@
 
   </nav>
 
-
-
   <section ng-controller="workController as workCtrl">
 
     <div id="ProjectCont" class="container-fluid" >
-
-      <section>
-        <div ng-repeat="mobile in workCtrl.boards" id="mobileDisplay">
-          <ul>
-            <li id="mobileTitle"><h4>{{mobile.title}}</h4></li>
-            <li>
-              <a href="{{mobile.link}}">
-                <img ng-src="img\0\{{mobile.mobile}}" ng-click="scrollTo(mobile.id)" id="imgMobile" class="img-responsive" alt="imaga example">
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-
 
       <section><!-- Angularjs TEMPLATE injection -->
         <div id="demo" class="showcase">
@@ -72,23 +53,23 @@
 
             <div id="barArticle" class="container-fluid" >
               <div id="{{demo.id}}">
-              <div class="container-fluid">
+              <div class="container-fluid pull-left">
 
-                <div id="dataBarArt-A" class="col-sm-4 col-md-4 dataBarArt">
+                <div id="dataBarArt-A" class="col-md-4 dataBarArt">
                   <div>
                     <h3>{{demo.title}}</h3>
                     <p>Description: {{demo.description}}</p>
                     <p>Programs:</p>
                     <p>{{demo.programs}}</p>
                   </div>
-                  <div id="showcaseLinks">
-                    <p class="showcaseLinksGO">Watch on<a href="{{demo.link}}"><h4 class="showcaseLinksGO"> Site</h4></a></p>
-                    <p class="showcaseLinksGO">Watch on <a href="{{demo.github}}"><h4 class="showcaseLinksGO">Github</h4></a></p>
+                  <div id="showcaseLinks" class="pull-bottom">
+                    <p class="showcaseLinksGO">Watch on:<a href="{{demo.link}}"><h4 class="showcaseLinksGO"> Site</h4></a></p>
+                    <p class="showcaseLinksGO">Watch on: <a href="{{demo.github}}"><h4 class="showcaseLinksGO">Github</h4></a></p>
                   </div>
                 </div>
 
-                <div id="dataBarArt-B" class="col-sm-8 col-md-8 dataBarArt">
-                  <div id="projectInf" class="content mCustomScrollbar"><img ng-src="img\0\{{demo.demo}}" alt=""></div>
+                <div id="dataBarArt-B" class="col-md-8 dataBarArt">
+                  <div id="projectInf" class="text-center content mCustomScrollbar"><img class="img-resposive" ng-src="img\0\{{demo.demo}}" alt=""></div>
                 </div>
                 </div>
               </div>
@@ -106,7 +87,7 @@
 
   <footer>
 
-    <div id="legal">
+    <div id="legal" class="container-fluid">
       <div id="lineDecoration"></div>
       <p id="foo" class="col-md-6 col-sm-6">
         <a href="#">  Resume  </a> | <a href="https://www.linkedin.com/in/danielfm212/en">  LinkedIn  </a> | <a href="https://github.com/dfm212">  Github  </a> | <a href="https://twitter.com/Dfm212">  Twitter  </a>
