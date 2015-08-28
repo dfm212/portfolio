@@ -36,9 +36,10 @@
   #legal {
     position: fixed;
   }
+  #legal #rights{
+    display: none!important;
+  }
 }
-
-
 
 
 @media (min-width: 320px) and (max-width: 636px){

@@ -1,0 +1,10 @@
+<div ng-repeat="mobile in workCtrl.boards" id="mobileDisplay">
+  <ul>
+    <li id="mobileTitle"><h4>{{mobile.title}}</h4></li>
+    <li>
+      <a href="{{mobile.link}}">
+        <img ng-src="img\0\{{mobile.mobile}}" ng-click="scrollTo(mobile.id)" id="imgMobile" class="img-responsive" alt="imaga example">
+      </a>
+    </li>
+  </ul>
+</div>
