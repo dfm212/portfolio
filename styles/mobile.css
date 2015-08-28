@@ -1,0 +1,53 @@
+
+@media (min-width: 320px) and (max-width: 736px){
+  body{
+    width: 1220px;
+  }
+  #demo{
+    display: none;
+  }
+  #showcase{
+    display: none!important;
+  }
+  #mobileDisplay{
+    display: inline-block;
+  }
+  #imgMobile{
+    display: block;
+    width: auto;
+    height: auto;
+  }
+  #mobileTitle{
+    color: #cccccc;
+    background-color: rgba(0, 153, 204, 0.7);
+    font-weight: bolder;
+    margin: 0px!important;
+    padding: 12px 25px 9px 25px!important;
+    position: relative;
+  }
+  #bar{
+    display: none;
+  }
+  #legal p{
+    padding: 15px 0 20px 30px;
+  }
+}
+
+
+
+
+@media (min-width: 320px) and (max-width: 636px){
+  #showcase{
+    display: block;
+  }
+}
+
+@media (min-height: 320) and (max-height: 480){
+  body{
+    height: 400px;
+  }
+  #mobileDisplay{
+    margin-top: -27%;
+    height: 150px;
+  }
+}
